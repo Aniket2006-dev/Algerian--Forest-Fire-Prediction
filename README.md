@@ -59,8 +59,16 @@ The model uses the following environmental parameters:
 | > 30 | Extreme Risk |
 
 ---
+## Application screenshots
 
-## Tech Stack
+<img width="959" height="508" alt="Screenshot 2026-06-06 015410" src="https://github.com/user-attachments/assets/cb68d046-3b9d-42a6-b717-c7bd3950d8a4" />
+
+<img width="959" height="508" alt="Screenshot 2026-06-06 015141" src="https://github.com/user-attachments/assets/948eddd7-352d-4363-885b-aecc2141f3b7" />
+
+<img width="959" height="506" alt="Screenshot 2026-06-06 015216" src="https://github.com/user-attachments/assets/f368ef02-a8e6-4290-b576-569e8a07ad90" />
+
+<img width="959" height="508" alt="Screenshot 2026-06-06 015322" src="https://github.com/user-attachments/assets/a28cce22-0a60-4729-81f6-ce7b398f230f" />
+
 
 ### Machine Learning
 
@@ -97,6 +105,11 @@ Dataset → Data Cleaning → EDA → Feature Engineering → Feature Scaling �
 - End-to-End Machine Learning Pipeline
 
 ---
+
+## Live Application
+
+[Open Live Demo](http://algerian-forest-fire-prediction-env-1.eba-2qbsypdm.ap-southeast-2.elasticbeanstalk.com)
+
 
 ## Author
 
