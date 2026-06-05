@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FWI Prediction</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🔥 FirePredict</div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/predict">Prediction</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="hero-badge">
+            Wildfire Risk Assessment
+        </div>
+
+        <h1>🔥 Fire Weather Index Prediction</h1>
+
+        <h3>
+            Enter Environmental Parameters to Predict Wildfire Risk
+        </h3>
+
+        <form action="{{ url_for('predict_datapoint') }}"
+              method="post">
+
+            <div class="form-grid">
+
+                <input type="text"
+                       name="Temperature"
+                       placeholder="🌡 Temperature (°C)"
+                       required>
+
+                <input type="text"
+                       name="RH"
+                       placeholder="💧 Relative Humidity (%)"
+                       required>
+
+                <input type="text"
+                       name="Ws"
+                       placeholder="💨 Wind Speed (km/h)"
+                       required>
+
+                <input type="text"
+                       name="Rain"
+                       placeholder="🌧 Rainfall (mm)"
+                       required>
+
+                <input type="text"
+                       name="FFMC"
+                       placeholder="🔥 FFMC"
+                       required>
+
+                <input type="text"
+                       name="DMC"
+                       placeholder="📊 DMC"
+                       required>
+
+                <input type="text"
+                       name="ISI"
+                       placeholder="⚡ ISI"
+                       required>
+
+                <select name="Classes" required>
+                <option value="">Select Fire Status</option>
+                <option value="0">🔥 Fire</option>
+                <option value="1">🟩 Not Fire</option>
+                </select> 
+
+                <select name="Region" required>
+                <option value="">📍 Select Region</option>
+                <option value="0">Bejaia</option>
+                <option value="1">Sidi Bel-Abbes</option>
+                </select>
+
+            </div>
+
+            <button type="submit">
+                 Predict FWI
+            </button>
+
+        </form>
+
+        {% if results %}
+
+        <div class="result-box">
+            <h2>Prediction Result</h2>
+
+            <h1>{{ results }}</h1>
+
+            <h3>{{ risk }}</h3>
+
+            
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>
+

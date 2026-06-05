@@ -1,0 +1,76 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algerian Forest Fire Prediction</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🔥 FirePredict</div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="#features">Features</a>
+            <a href="/predict">Prediction</a>
+        </div>
+    </nav>
+
+    <div class="hero-card">
+
+        <div class="hero-badge">
+            Machine Learning Powered
+        </div>
+
+        <h1>Algerian Forest Fire Prediction</h1>
+
+        <p class="hero-text">
+            Predict wildfire danger levels using environmental
+            conditions and machine learning techniques.
+        </p>
+
+        <div class="feature-grid" id="features">
+
+            <div class="feature-card">
+                <h2>📊 Historical Weather Analysis</h2>
+                <p>
+                    Analyze weather and environmental patterns
+                    related to wildfire activity.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h2>🧠 ML-Powered Risk Assessment</h2>
+                <p>
+                    Utilize machine learning techniques to evaluate
+                    wildfire danger based on environmental conditions.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h2>⚡ Instant FWI Prediction</h2>
+                <p>
+                    Generate real-time Fire Weather Index predictions
+                    using machine learning.
+                </p>
+            </div>
+
+        </div>
+
+        <a href="/predict">
+            <button class="cta-btn">
+                Start Prediction
+            </button>
+        </a>
+
+    </div>
+
+</body>
+</html>
+```
